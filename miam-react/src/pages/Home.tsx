@@ -47,7 +47,7 @@ const Home: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <div className="relative overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-100">
+      <div className="relative overflow-hidden bg-gradient-to-br from-miam-cream-100 to-miam-primary-50">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -57,7 +57,7 @@ const Home: React.FC = () => {
           >
             <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
               <span className="block">Mangez mieux,</span>
-              <span className="block text-blue-600">sans vous compliquer la vie</span>
+              <span className="block text-secondary">sans vous compliquer la vie</span>
             </h1>
             <p className="mt-3 max-w-md mx-auto text-base text-gray-600 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
               mIAm apprend vos goûts et contraintes pour vous proposer des repas équilibrés, faciles à préparer et adaptés à votre quotidien.
@@ -70,7 +70,7 @@ const Home: React.FC = () => {
               >
                 <Link
                   to="/profile"
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10 transition-colors"
+                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-accent hover:bg-miam-accent-700 md:py-4 md:text-lg md:px-10 transition-colors shadow-lg"
                 >
                   Commencer maintenant
                 </Link>
@@ -79,19 +79,13 @@ const Home: React.FC = () => {
           </motion.div>
         </div>
         
-        {/* Wave SVG */}
-        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-full h-32">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="fill-white"></path>
-          </svg>
-        </div>
       </div>
 
       {/* Features Section */}
       <div className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
-            <h2 className="text-base text-blue-600 font-semibold tracking-wide uppercase">Fonctionnalités</h2>
+            <h2 className="text-base text-secondary font-semibold tracking-wide uppercase">Fonctionnalités</h2>
             <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               Une expérience culinaire personnalisée
             </p>
@@ -108,9 +102,9 @@ const Home: React.FC = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="bg-gray-50 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow"
+                  className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow border border-miam-cream-200"
                 >
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-primary text-white shadow-md">
                     <feature.icon className="h-6 w-6" aria-hidden="true" />
                   </div>
                   <div className="mt-5">
@@ -125,12 +119,12 @@ const Home: React.FC = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="bg-blue-700">
+      <div className="bg-secondary">
         <div className="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
             <span className="block">Prêt à révolutionner votre alimentation?</span>
           </h2>
-          <p className="mt-4 text-lg leading-6 text-blue-200">
+          <p className="mt-4 text-lg leading-6 text-miam-cream-200">
             Essayez mIAm gratuitement pendant 14 jours. Sans engagement, annulation à tout moment.
           </p>
           <motion.div
@@ -140,7 +134,7 @@ const Home: React.FC = () => {
           >
             <Link
               to="/profile"
-              className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50 transition-colors"
+              className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-secondary bg-white hover:bg-miam-cream-100 transition-colors shadow-lg"
             >
               Démarrer l'essai gratuit
             </Link>

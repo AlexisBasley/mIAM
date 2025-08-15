@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="bg-white shadow-sm">
+    <nav className="bg-white/90 backdrop-blur-sm shadow-sm border-b border-miam-cream-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
@@ -42,8 +42,8 @@ const Navbar: React.FC = () => {
                 to={item.href}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                   isActive(item.href)
-                    ? 'bg-blue-100 text-blue-700'
-                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-100'
+                    ? 'bg-miam-primary-100 text-miam-primary-800'
+                    : 'text-gray-700 hover:text-secondary hover:bg-miam-cream-200'
                 }`}
               >
                 {item.name}
@@ -53,11 +53,11 @@ const Navbar: React.FC = () => {
 
           <div className="hidden sm:flex sm:items-center">
             {isAuthenticated ? (
-              <button className="bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded-md text-sm font-medium transition-colors">
+              <button className="bg-miam-cream-300 hover:bg-miam-cream-400 text-gray-800 px-4 py-2 rounded-md text-sm font-medium transition-colors">
                 Mon compte
               </button>
             ) : (
-              <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
+              <button className="bg-accent hover:bg-miam-accent-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors shadow-sm">
                 Connexion
               </button>
             )}
@@ -67,7 +67,7 @@ const Navbar: React.FC = () => {
           <div className="flex items-center sm:hidden">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-miam-cream-100"
             >
               {mobileMenuOpen ? (
                 <XMarkIcon className="block h-6 w-6" />
@@ -91,7 +91,7 @@ const Navbar: React.FC = () => {
               </div>
               <button
                 onClick={() => setMobileMenuOpen(false)}
-                className="p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100"
+                className="p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-miam-cream-100"
               >
                 <XMarkIcon className="h-6 w-6" />
               </button>
@@ -105,8 +105,8 @@ const Navbar: React.FC = () => {
                   to={item.href}
                   className={`block px-4 py-3 rounded-lg text-lg font-medium transition-colors ${
                     isActive(item.href)
-                      ? 'bg-blue-100 text-blue-700'
-                      : 'text-gray-700 hover:text-blue-600 hover:bg-gray-100'
+                      ? 'bg-miam-primary-100 text-miam-primary-800'
+                      : 'text-gray-700 hover:text-secondary hover:bg-miam-cream-100'
                   }`}
                   onClick={() => setMobileMenuOpen(false)}
                 >
@@ -122,7 +122,7 @@ const Navbar: React.FC = () => {
                   Mon compte
                 </button>
               ) : (
-                <button className="w-full bg-blue-500 hover:bg-blue-600 text-white px-4 py-3 rounded-lg text-lg font-medium transition-colors">
+                <button className="w-full bg-accent hover:bg-miam-accent-700 text-white px-4 py-3 rounded-lg text-lg font-medium transition-colors">
                   Connexion
                 </button>
               )}

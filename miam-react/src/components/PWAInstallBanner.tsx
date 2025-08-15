@@ -102,7 +102,7 @@ const PWAInstallBanner: React.FC = () => {
             ) : (
               <button
                 onClick={handleInstallClick}
-                className="mt-2 inline-flex items-center px-3 py-1 border border-transparent text-xs font-medium rounded text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                className="mt-2 inline-flex items-center px-3 py-1 border border-transparent text-xs font-medium rounded text-white bg-accent hover:bg-miam-accent-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent"
               >
                 <PlusIcon className="h-3 w-3 mr-1" />
                 Installer

@@ -168,15 +168,15 @@ const Recipes: React.FC = () => {
   };
 
   return (
-    <div className="py-8 px-4 bg-gray-50 min-h-screen">
+    <div className="py-8 px-4 bg-cream min-h-screen">
       <div className="max-w-sm mx-auto">
         <div className="text-center mb-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-2">Découvrez</h2>
           <p className="text-gray-600">
             Swipez ➡️ pour aimer, ⬅️ pour passer
           </p>
-          <div className="mt-4 bg-blue-100 rounded-full px-4 py-1 inline-block">
-            <span className="text-sm text-blue-800">
+          <div className="mt-4 bg-miam-primary-100 rounded-full px-4 py-1 inline-block">
+            <span className="text-sm text-miam-primary-800 font-medium">
               {currentIndex + 1} / {recipes.length}
             </span>
           </div>
@@ -215,7 +215,7 @@ const Recipes: React.FC = () => {
             >
               {/* Swipe indicators */}
               <animated.div 
-                className="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 rounded-full font-bold z-20"
+                className="absolute top-4 left-4 bg-primary text-white px-4 py-2 rounded-full font-bold z-20 shadow-lg"
                 style={{
                   opacity: x.to(x => x > 50 ? Math.min(1, (x - 50) / 100) : 0)
                 }}
@@ -224,7 +224,7 @@ const Recipes: React.FC = () => {
               </animated.div>
               
               <animated.div 
-                className="absolute top-4 right-4 bg-gray-500 text-white px-3 py-1 rounded-full font-bold z-20"
+                className="absolute top-4 right-4 bg-accent text-white px-4 py-2 rounded-full font-bold z-20 shadow-lg"
                 style={{
                   opacity: x.to(x => x < -50 ? Math.min(1, (-x - 50) / 100) : 0)
                 }}
@@ -258,7 +258,7 @@ const Recipes: React.FC = () => {
                     {currentRecipe.time} min
                   </div>
                   <div>{currentRecipe.calories} kcal</div>
-                  <div className="capitalize px-2 py-1 bg-gray-100 rounded text-xs">
+                  <div className="capitalize px-2 py-1 bg-miam-cream-200 rounded text-xs">
                     {currentRecipe.difficulty === 'easy' ? 'Facile' : 
                      currentRecipe.difficulty === 'medium' ? 'Moyen' : 'Difficile'}
                   </div>
@@ -274,18 +274,18 @@ const Recipes: React.FC = () => {
             onTouchStart={() => handleSwipe(false)}
             onClick={() => handleSwipe(false)}
             disabled={isGesturing}
-            className="flex items-center justify-center w-16 h-16 rounded-full bg-gray-100 hover:bg-gray-200 active:bg-gray-300 transition-colors disabled:opacity-50"
+            className="flex items-center justify-center w-16 h-16 rounded-full bg-miam-cream-300 hover:bg-miam-cream-400 active:bg-miam-cream-500 transition-colors disabled:opacity-50 shadow-md"
           >
-            <XMarkIcon className="h-8 w-8 text-gray-600" />
+            <XMarkIcon className="h-8 w-8 text-accent" />
           </button>
           
           <button
             onTouchStart={() => handleSwipe(true)}
             onClick={() => handleSwipe(true)}
             disabled={isGesturing}
-            className="flex items-center justify-center w-16 h-16 rounded-full bg-red-100 hover:bg-red-200 active:bg-red-300 transition-colors disabled:opacity-50"
+            className="flex items-center justify-center w-16 h-16 rounded-full bg-primary hover:bg-miam-primary-600 active:bg-miam-primary-700 transition-colors disabled:opacity-50 shadow-md"
           >
-            <HeartSolidIcon className="h-8 w-8 text-red-600" />
+            <HeartSolidIcon className="h-8 w-8 text-white" />
           </button>
         </div>
 

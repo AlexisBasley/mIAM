@@ -53,10 +53,10 @@ const Profile: React.FC = () => {
   };
 
   return (
-    <div className="py-12 bg-gray-50 min-h-screen">
+    <div className="py-12 bg-cream min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center mb-12">
-          <h2 className="text-base text-blue-600 font-semibold tracking-wide uppercase">Personnalisation</h2>
+          <h2 className="text-base text-secondary font-semibold tracking-wide uppercase">Personnalisation</h2>
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             Créez votre profil alimentaire
           </p>
@@ -82,7 +82,7 @@ const Profile: React.FC = () => {
                         type="radio"
                         checked={formData.diet === diet}
                         onChange={() => handleDietChange(diet)}
-                        className="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300"
+                        className="focus:ring-primary h-4 w-4 text-primary border-miam-cream-300"
                       />
                       <label htmlFor={diet} className="ml-3 block text-sm font-medium text-gray-700 capitalize">
                         {diet === 'omnivore' ? 'Omnivore' :
@@ -112,7 +112,7 @@ const Profile: React.FC = () => {
                         type="checkbox"
                         checked={formData.allergies[key as keyof typeof formData.allergies]}
                         onChange={() => handleAllergyChange(key)}
-                        className="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300 rounded"
+                        className="focus:ring-primary h-4 w-4 text-primary border-miam-cream-300 rounded"
                       />
                       <label htmlFor={key} className="ml-2 block text-sm text-gray-700">
                         {label}
@@ -131,7 +131,7 @@ const Profile: React.FC = () => {
                   id="health-goals"
                   value={formData.healthGoals}
                   onChange={(e) => setFormData({ ...formData, healthGoals: e.target.value })}
-                  className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
+                  className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-miam-cream-300 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm rounded-md"
                 >
                   <option value="maintain">Maintien du poids</option>
                   <option value="lose">Perte de poids</option>
@@ -162,7 +162,7 @@ const Profile: React.FC = () => {
             <div className="mt-8">
               <button
                 type="submit"
-                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
+                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-accent hover:bg-miam-accent-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent transition-colors"
               >
                 Enregistrer mes préférences
               </button>
