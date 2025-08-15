@@ -49,34 +49,80 @@ const Home: React.FC = () => {
       {/* Hero Section */}
       <div className="relative overflow-hidden bg-gradient-to-br from-miam-cream-100 to-miam-primary-50">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-center"
-          >
-            <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-              <span className="block">Mangez mieux,</span>
-              <span className="block text-secondary">sans vous compliquer la vie</span>
-            </h1>
-            <p className="mt-3 max-w-md mx-auto text-base text-gray-600 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-              mIAm apprend vos goûts et contraintes pour vous proposer des repas équilibrés, faciles à préparer et adaptés à votre quotidien.
-            </p>
-            <div className="mt-10 flex justify-center">
-              <motion.div 
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="rounded-md shadow"
-              >
-                <Link
-                  to="/profile"
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-accent hover:bg-miam-accent-700 md:py-4 md:text-lg md:px-10 transition-colors shadow-lg"
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            {/* Text Content */}
+            <motion.div 
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-center lg:text-left"
+            >
+              <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
+                <span className="block">Mangez mieux,</span>
+                <span className="block text-secondary">sans vous compliquer la vie</span>
+              </h1>
+              <p className="mt-3 max-w-md mx-auto lg:mx-0 text-base text-gray-600 sm:text-lg md:mt-5 md:text-xl">
+                mIAm apprend vos goûts et contraintes pour vous proposer des repas équilibrés, faciles à préparer et adaptés à votre quotidien.
+              </p>
+              <div className="mt-10 flex justify-center lg:justify-start">
+                <motion.div 
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="rounded-md shadow"
                 >
-                  Commencer maintenant
-                </Link>
-              </motion.div>
-            </div>
-          </motion.div>
+                  <Link
+                    to="/profile"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-accent hover:bg-miam-accent-700 md:py-4 md:text-lg md:px-10 transition-colors shadow-lg"
+                  >
+                    Commencer maintenant
+                  </Link>
+                </motion.div>
+              </div>
+            </motion.div>
+
+            {/* Images */}
+            <motion.div 
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="relative"
+            >
+              {/* Both images in a grid */}
+              <div className="grid grid-cols-2 gap-4">
+                {/* Scan image */}
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5, delay: 0.4 }}
+                  className="relative"
+                >
+                  <img 
+                    src="/scan.JPEG" 
+                    alt="Scanner vos aliments avec mIAm"
+                    className="w-full h-64 md:h-80 object-cover rounded-lg shadow-xl"
+                  />
+                </motion.div>
+
+                {/* Plats image */}
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5, delay: 0.6 }}
+                  className="relative"
+                >
+                  <img 
+                    src="/plats.JPEG" 
+                    alt="Préparation de repas avec mIAm"
+                    className="w-full h-64 md:h-80 object-cover rounded-lg shadow-xl"
+                  />
+                </motion.div>
+              </div>
+
+              {/* Decorative elements */}
+              <div className="absolute top-10 left-10 w-20 h-20 bg-primary/10 rounded-full blur-xl"></div>
+              <div className="absolute bottom-10 right-10 w-32 h-32 bg-secondary/10 rounded-full blur-xl"></div>
+            </motion.div>
+          </div>
         </div>
       </div>
 
