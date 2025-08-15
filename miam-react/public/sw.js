@@ -7,7 +7,7 @@ const STATIC_FILES = [
   '/',
   '/static/js/bundle.js',
   '/static/css/main.css',
-  '/logomiam.png',
+  '/logomiam.svg',
   '/manifest.json',
   'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css',
   'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'
@@ -110,8 +110,8 @@ self.addEventListener('push', (event) => {
   
   const options = {
     body: event.data ? event.data.text() : 'Nouvelle notification mIAm',
-    icon: '/logomiam.png',
-    badge: '/logomiam.png',
+    icon: '/logomiam.svg',
+    badge: '/logomiam.svg',
     vibrate: [100, 50, 100],
     data: {
       dateOfArrival: Date.now(),
@@ -121,7 +121,7 @@ self.addEventListener('push', (event) => {
       {
         action: 'explore',
         title: 'Voir la recette',
-        icon: '/logomiam.png'
+        icon: '/logomiam.svg'
       },
       {
         action: 'close',

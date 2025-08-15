@@ -78,7 +78,6 @@ const Home: React.FC = () => {
             </div>
           </motion.div>
         </div>
-        
       </div>
 
       {/* Features Section */}

@@ -80,7 +80,7 @@ const PWAInstallBanner: React.FC = () => {
       <div className="bg-white rounded-lg shadow-lg border border-gray-200 p-4">
         <div className="flex items-start">
           <div className="flex-shrink-0">
-            <img src="/logomiam.png" alt="mIAm" className="h-10 w-10 rounded-lg" />
+            <img src="/logomiam.svg" alt="mIAm" className="h-10 w-10 rounded-lg" />
           </div>
           
           <div className="ml-3 flex-1">
