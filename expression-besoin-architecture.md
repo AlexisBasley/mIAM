@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="../logomiam.png" alt="mIAm Logo" width="200"/>
+  <img src="logomiam.png" alt="mIAm Logo" width="200"/>
   
   # Expression de besoin et Architecture - Application mIAm
   
@@ -11,7 +11,7 @@
 ## 1. Expression de besoin
 
 <div align="center">
-  <img src="../logomiam.png" alt="mIAm" width="80"/>
+  <img src="logomiam.png" alt="mIAm" width="80"/>
 </div>
 
 ### 1.1 Vision produit
@@ -111,7 +111,7 @@ mIAm est un assistant culinaire intelligent qui révolutionne la façon dont les
 - Conseils personnalisés d'amélioration
 
 <div align="center">
-  <img src="../logomiam.png" alt="mIAm" width="60"/>
+  <img src="logomiam.png" alt="mIAm" width="60"/>
 </div>
 
 ### 1.5 Exigences non fonctionnelles
@@ -142,7 +142,7 @@ mIAm est un assistant culinaire intelligent qui révolutionne la façon dont les
 - Support React Native Accessibility API
 
 <div align="center">
-  <img src="../logomiam.png" alt="mIAm" width="100"/>
+  <img src="logomiam.png" alt="mIAm" width="100"/>
 </div>
 
 ## 2. Architecture technique
@@ -339,7 +339,7 @@ mIAm est un assistant culinaire intelligent qui révolutionne la façon dont les
 - Twilio (SMS rappels)
 
 <div align="center">
-  <img src="../logomiam.png" alt="mIAm" width="60"/>
+  <img src="logomiam.png" alt="mIAm" width="60"/>
 </div>
 
 ### 2.6 Roadmap technique
@@ -407,7 +407,7 @@ mIAm est un assistant culinaire intelligent qui révolutionne la façon dont les
 - **Total MVP à V1 complète : 10 mois**
 
 <div align="center">
-  <img src="../logomiam.png" alt="mIAm" width="120"/>
+  <img src="logomiam.png" alt="mIAm" width="120"/>
   
   ---
   
