@@ -8,6 +8,27 @@
 
 ---
 
+## 📋 Sommaire
+
+### 1. Expression de besoin
+- [1.1 Vision produit](#11-vision-produit)
+- [1.2 Objectifs principaux](#12-objectifs-principaux)
+- [1.3 Personas cibles](#13-personas-cibles)
+- [1.4 Fonctionnalités clés](#14-fonctionnalités-clés)
+- [1.5 Exigences non fonctionnelles](#15-exigences-non-fonctionnelles)
+
+### 2. Architecture technique
+- [2.1 Vue d'ensemble](#21-vue-densemble)
+- [2.2 Stack technique](#22-stack-technique)
+- [2.3 Architecture des microservices](#23-architecture-des-microservices)
+- [2.4 Sécurité](#24-sécurité)
+- [2.5 Intégrations externes](#25-intégrations-externes)
+- [2.6 Roadmap technique](#26-roadmap-technique)
+- [2.7 Monitoring et KPIs](#27-monitoring-et-kpis)
+- [2.8 Estimations](#28-estimations)
+
+---
+
 ## 1. Expression de besoin
 
 <div align="center">
