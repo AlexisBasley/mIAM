@@ -31,9 +31,6 @@
 
 ## 1. Expression de besoin
 
-<div align="center">
-  <img src="logomiam.png" alt="mIAm" width="80"/>
-</div>
 
 ### 1.1 Vision produit
 mIAm est un assistant culinaire intelligent qui révolutionne la façon dont les utilisateurs planifient, préparent et consomment leurs repas en apprenant leurs goûts, habitudes et contraintes pour proposer une expérience alimentaire personnalisée et durable.
@@ -131,9 +128,7 @@ mIAm est un assistant culinaire intelligent qui révolutionne la façon dont les
 - Badges et récompenses
 - Conseils personnalisés d'amélioration
 
-<div align="center">
-  <img src="logomiam.png" alt="mIAm" width="60"/>
-</div>
+
 
 ### 1.5 Exigences non fonctionnelles
 
@@ -162,9 +157,7 @@ mIAm est un assistant culinaire intelligent qui révolutionne la façon dont les
 - Tailles de police ajustables
 - Support React Native Accessibility API
 
-<div align="center">
-  <img src="logomiam.png" alt="mIAm" width="100"/>
-</div>
+
 
 ## 2. Architecture technique
 
@@ -359,9 +352,7 @@ mIAm est un assistant culinaire intelligent qui révolutionne la façon dont les
 - SendGrid (notifications email)
 - Twilio (SMS rappels)
 
-<div align="center">
-  <img src="logomiam.png" alt="mIAm" width="60"/>
-</div>
+
 
 ### 2.6 Roadmap technique
 
