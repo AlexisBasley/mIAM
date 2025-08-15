@@ -6,6 +6,7 @@ import { store } from './store/store';
 
 // Composants
 import Navbar from './components/Navbar';
+import PWAInstallBanner from './components/PWAInstallBanner';
 import Home from './pages/Home';
 import Profile from './pages/Profile';
 import Calendar from './pages/Calendar';
@@ -35,6 +36,7 @@ function App() {
               },
             }}
           />
+          <PWAInstallBanner />
         </div>
       </Router>
     </Provider>
