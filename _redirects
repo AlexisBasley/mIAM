@@ -1,0 +1,5 @@
+# Redirections Netlify
+# Format: from to status
+
+# Redirection pour gérer les futures routes SPA
+/*    /index.html   200

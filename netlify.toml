@@ -1,0 +1,42 @@
+# Configuration Netlify pour mIAm
+
+[build]
+  # Pas de commande de build nécessaire pour un site statique
+  publish = "."
+
+[[redirects]]
+  # Redirection pour gérer les routes SPA (si nécessaire plus tard)
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  # Headers de sécurité et performance
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+[[headers]]
+  # Cache pour les assets statiques
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
